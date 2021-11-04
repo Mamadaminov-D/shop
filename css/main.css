@@ -369,8 +369,12 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #fff;
+}
+
+.p-r {
+  position: relative;
 }
 
 .container {
@@ -410,6 +414,114 @@ header {
   padding: 60px 0;
 }
 
+.header__smal {
+  border-top: 1px solid #276CB2;
+}
+
+.y-hed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff !important;
+}
+
+.y-hed:hover {
+  background-color: #276CB2;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item:hover .beat {
+  visibility: visible;
+  opacity: 1;
+}
+
+.beat {
+  width: 500px;
+  background-color: #fff;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 10px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.267);
+          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.267);
+}
+
+.beat2 {
+  width: 250px;
+}
+
+.beat2 li {
+  border-bottom: 0.5px solid #CECECD;
+}
+
+.husa {
+  padding: 10px 2px;
+}
+
+.husa li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  padding-bottom: 10px;
+  color: rgba(17, 17, 17, 0.63);
+  list-style: none;
+}
+
+.husa__link {
+  text-decoration: none;
+  color: rgba(17, 17, 17, 0.377);
+}
+
+.husa__link b {
+  color: #000;
+}
+
+.husa__link::after {
+  text-decoration: none;
+  content: "";
+  display: block;
+  width: 180px;
+  height: 2px;
+  background-color: #CECECD;
+  position: absolute;
+}
+
+.husa__item {
+  position: relative;
+}
+
+.husa li b {
+  color: #000;
+}
+
+.y-hed .bx {
+  padding-left: 5px;
+}
+
+.elc {
+  font-size: 18px;
+}
+
+.header__icons li {
+  list-style: none;
+}
+
+.yure {
+  padding-right: 10px;
+}
+
 .header__logo-d {
   display: none;
 }
@@ -445,6 +557,12 @@ header {
 .h_icon {
   font-size: 25px;
   color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.h_icon:hover {
+  color: red;
 }
 
 .h_icon:not(:last-child) {
