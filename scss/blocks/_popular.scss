@@ -1,0 +1,39 @@
+#popular-section {
+  margin-top: 50px;
+}
+
+.catch {
+  width: 100%;
+  padding: 0;
+}
+
+.catch li {
+  list-style: none;
+  @include card-hover;
+}
+
+.catch-img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+.catch__list:nth-child(2) {
+  padding: 0 10px;
+}
+
+@media screen and (max-width:860px) {
+  .catch {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .catch__list:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .header__smal {
+    display: none;
+  }
+}

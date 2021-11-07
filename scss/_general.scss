@@ -26,6 +26,10 @@ body {
   position: relative;
 }
 
+li {
+  list-style: none;
+}
+
 .container {
   max-width: 1250px !important;
   width: 100%;
